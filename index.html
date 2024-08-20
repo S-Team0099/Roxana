@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi novia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #ff6699;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            animation: fadeInText 2.5s ease-in-out;
+            margin: 15px 0;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+            animation: fadeInText 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Consultas de medios para dispositivos móviles */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .card {
+                padding: 15px;
+                max-width: 90%;
+            }
+            p {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Para Ti mi Vida</h1>
+        <p>
+            Mi querida Roxana Perla,
+        </p>
+        <p>
+            Estoy inmensamente orgulloso de la mujer increíble que eres, de tu valentía y esfuerzo en todo lo que haces. Aunque el camino no siempre sea fácil, quiero que sepas que nunca te rindas.
+        </p>
+        <p>
+            Siempre estaré a tu lado, apoyándote y dándote aliento. Eres mi princesa, y sé que puedes superar cualquier desafío que se te presente.
+        </p>       
+        <p class="signature">
+            Con todo mi amor,<br>
+            Samuel
+        </p>
+    </div>
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+</body>
+</html>
